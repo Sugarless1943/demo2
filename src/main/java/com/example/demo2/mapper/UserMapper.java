@@ -1,9 +1,9 @@
 package com.example.demo2.mapper;
 
 import com.example.demo2.entity.User;
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
-@Repository
+@Mapper
 public interface UserMapper {
     User findById(int id);
 }
